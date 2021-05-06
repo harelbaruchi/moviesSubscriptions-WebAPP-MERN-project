@@ -48,7 +48,8 @@ exports.updateMovie = function(id, movieNew) {
         Movie.findByIdAndUpdate(id, {
             name:             movieNew.name,
             yearpremiered:    movieNew.yearpremiered,
-            genres:           movieNew.genres      
+            genres:           movieNew.genres, 
+            imageurl:         movieNew.imageurl   
         }, function(err) {
             if (err) {
                 reject(err)
