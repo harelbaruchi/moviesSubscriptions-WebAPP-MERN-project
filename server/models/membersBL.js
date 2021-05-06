@@ -27,6 +27,7 @@ exports.getMember = function(id) {
 exports.addMember = function(memberNew) {
     return new Promise((resolve, reject) => {
         let newMember = new Member ({
+            name:       memberNew.name,
             _id:        memberNew._id,
             email:      memberNew.email,
             city:       memberNew.city
@@ -44,6 +45,7 @@ exports.addMember = function(memberNew) {
 exports.updateMember = function(id, memberNew) {
     return new Promise((resolve, reject) => {
         Member.findByIdAndUpdate(id, {
+            name:       memberNew.name,
             email:      memberNew.email,
             city:       memberNew.city      
         }, function(err) {
