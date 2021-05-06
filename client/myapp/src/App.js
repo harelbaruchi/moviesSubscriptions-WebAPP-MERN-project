@@ -5,6 +5,7 @@ import AllMoviesPage from './components/AllMoviesPage'
 import AddMoviePage from './components/AddMoviePage'
 import EditMovie from './components/EditMovie'
 import MainPage from './components/MainPage'
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
